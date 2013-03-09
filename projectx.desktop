@@ -1,0 +1,11 @@
+[Desktop Entry]
+X-SuSE-translate=true
+Categories=AudioVideo;AudioVideoEditing;
+Comment=A video editing and demultiplexing tool
+Exec=java -jar /usr/share/projectx/ProjectX.jar
+GenericName=ProjectX
+Icon=package_multimedia
+Name=ProjectX
+Name[de]=ProjectX
+Terminal=false
+Type=Application

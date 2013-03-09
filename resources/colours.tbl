@@ -1,0 +1,210 @@
+//project X optional file, read-only
+//user colour table definition for DVB subpictures, creating a .sup file, as a replacement of the internal remapping
+
+//required entries of a table:
+//table=list name
+//model=final colour link depth of this table in bits (2, 4, 8) (means max. 4, 16, 256 paletized colours, best value depends on broadcasters std. table)
+//model + 1 activates multicolor sup mode, such sup files may not be compatible to some old DVD players or software
+//0..x=ARGB (alpha,red,green,blue as 32bit uimsbf, 8bit each)  (undefined colour links are fully transparent)
+
+//you can add as many tables you wish
+
+table=RTLdeu
+model=4
+0=0
+1=FFEBCE11
+2=FF786C18
+3=FF786C18
+4=FF786C18
+5=FF786C18
+6=FF786C18
+7=FFEBCE11
+8=FF111111
+9=FF111111
+10=FF111111
+11=FF111111
+12=FF111111
+13=FF111111
+14=FF111111
+15=FF111111
+
+table=UkFreeview(mc)
+model=5
+0=000E0EFD
+1=00111111
+2=008E8E0F
+3=00CCCC0E
+4=00FDFD0E
+5=000F8E0F
+6=000ECC0E
+7=000EFD0E
+8=000F8E8E
+9=000ECCCC
+10=000EFDFD
+11=008E8E8E
+12=00CCCCCC
+13=00FFFFFF
+14=00FF8C8C
+15=00FF1010
+
+table=ZDFvision(mc)
+model=5	         
+0=00000081   //    blue   with hue=A0 and lum=40
+1=00000000   //    dark   with hue=A0 and lum=00
+2=00DC0000   //     red   with hue=00 and lum=6E
+3=0093E682   //   green*  with hue=50 and lum=B4
+4=00EBEB7B   //  yellow*  with hue=28 and lum=B3
+5=008C8CEB   //    blue*  with hue=A0 and lum=BB
+6=00EB8FEB   // magenta*  with hue=C7 and lum=BD
+7=0063EBEB   //    cyan*  with hue=78 and lum=A7
+8=00EBEBEB   //   white*  with hue=A0 and lum=EB
+9=007F0000   //     red   with hue=00 and lum=3F
+10=00007F00  //   green   with hue=50 and lum=3F
+11=007F7F00  //  yellow   with hue=28 and lum=3F
+12=0000007F  //    blue   with hue=A0 and lum=3F
+13=00CFCFCF  //   white   
+14=00007F7F  //    cyan   with hue=78 and lum=3F
+15=007F3F7F  // magenta   with hue=C8 and lum=5F
+//13=007F3F7F  // magenta   with hue=C8 and lum=5F
+//14=00007F7F  //    cyan   with hue=78 and lum=3F
+//15=007F7F7F  //   white   with hue=A0 and lum=7F
+
+table=SVT
+model=4
+0=0
+1=FF101000
+2=0
+3=FF101010
+4=FF101010
+5=FF101010
+6=FF101010
+7=FF101010
+8=FF101010
+9=FF101010
+10=FF101010
+11=FF989898
+12=FF989898
+13=FF989898
+14=FFDCDCDC
+15=FFDCDCDC
+
+table=NRK
+model=4
+0=0
+1=D4101010
+2=D4101010
+3=D4101010
+4=D4101010
+5=D4101010
+6=D4101010
+7=D4101010
+8=D4101010
+9=D4101010
+10=FF7C7C7C
+11=FF7C7C7C
+12=FF7C7C7C
+13=FFDCDCDC
+14=FFDCDCDC
+15=FFDCDCDC
+
+table=YLE
+model=4
+0=0
+1=FF010101
+2=FF010101
+3=FF010101
+4=FF010101
+5=FF010101
+6=FF010101
+7=FF9C9C9C
+8=FF9C9C9C
+9=FFD0D0D0
+10=FFD0D0D0
+11=FFD0D0D0
+12=FFD0D0D0
+13=FFD0D0D0
+14=FFD0D0D0
+15=FFD0D0D0
+
+table=C+Pol
+model=2
+0=0
+1=FF101010
+2=FFDCDCDC
+3=FF9C9C9C
+
+table=MTVAdria
+model=4
+0=0
+1=FF010101
+2=FF010101
+3=FF010101
+4=0
+5=FF010101
+6=FF010101
+7=FF010101
+8=FF010101
+9=FF010101
+10=FF010101
+11=FF8C8C8C
+12=FFC9C9C9
+13=FFC9C9C9
+14=FFC9C9C9
+15=0
+
+table=UkFreeview
+model=4
+0=0
+1=FF101010
+2=FFDADADA
+3=FF8C8C8C
+4=FF8C8C8C
+5=FFDADADA
+6=FFDADADA
+7=FFDADADA
+8=FFDADADA
+9=FFDADADA
+10=FFDADADA
+11=FFDADADA
+12=FFDADADA
+13=FFDADADA
+14=FFDADADA
+15=FFDADADA
+
+table=SVT DKTV2-Hvid/omrids
+model=4
+0=0
+1=FF101000
+2=0
+3=FF101010
+4=FF101010
+5=FF101010
+6=FF101010
+7=FF101010
+8=FF101010
+9=FF101010
+10=FF101010
+11=FF989898
+12=FF989898
+13=FF989898
+14=FFDCDCDC
+15=FFDCDCDC
+
+table=TV2-DLP-3
+model=4        
+0=0
+1=FFFFFFFF
+2=0
+3=FF0000FF
+4=FF0000FF
+5=FF0000FF
+6=FF0000FF
+7=FF0000FF
+8=FF0000FF
+9=FF0000FF
+10=FFFFFFFF
+11=FFFFFFFF
+12=FFFFFFFF
+13=FFFFFFFF
+14=FFFFFFFF
+15=FFFFFFFF

@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <title>CL-Interface</title>
+</head>
+<body alink="#ff0000" bgcolor="#e0e0e0" link="#0000ee" text="#000000"
+ vlink="#551a8b">
+<blockquote>
+  <center><a href="index.html"><img alt="" src="images/up.gif"
+ style="border: 0px solid ; width: 16px; height: 16px;"></a>&nbsp;&nbsp;<a
+ href="faq.html"><img alt="" src="images/right.gif"
+ style="border: 0px solid ; width: 16px; height: 16px;"></a></center>
+  <b>CL-Interface:</b> <br>
+  <i>[Options] &lt;Sourcefile 1&gt;...[&lt;</i><i>Sourcefile</i><i>
+x&gt;]</i>
+  <p><u>comment:</u> <br>
+CL loads all GUI components without showing them (except [-g]).<br>
+Input via CL-I is used as 1 job. </p>
+  <p><i><u>no options</u></i> <br>
+starts the GUI<br>
+an existing ini-file in the current working directory is read and
+overwritten on close. </p>
+  <p><i><u>options:</u></i> <br>
+  <b>-c &lt;ini_file&gt;</b> <br>
+if a different ini-file is given it must be provided with the full path
+to load correctly. this option overwrites all standard settings.<br>
+not all settings must be given, missing settings are set to the
+standard. <br>
+all options for the GUI including the post-commands are directly
+controllable via the ini-file, except the user variables like
+[-n,p,i]/Sourcefile. </p>
+  <p><b>-dvx1</b> <br>
+sets the 1st option for createing a .d2v projectfile </p>
+  <p><b>-dvx2</b> <br>
+sets the 2nd option for createing a .d2v projectfile<br>
+sets the options for appending a RIFF Wave Header for AC3 files</p>
+  <p><b>-dvx3</b><br>
+sets the 3rd option for createing a .d2v projectfile<br>
+sets the options for appending a RIFF Wave Header for MPEG audio files </p>
+  <p><b>-dvx4</b> <br>
+sets the 4th option for createing a .d2v projectfile<br>
+sets the options for appending a RIFF Wave Header for AC3 files <br>
+sets the options for appending a RIFF Wave Header for MPEG audio files <br>
+  </p>
+  <p>these options can't be used together! <br>
+the next options are independant but must be given after the first
+options (if used) or directly after the programname. </p>
+  <p><b>-o &lt;outputpath&gt;</b> <br>
+overwrites the current settings for the &lt;outputpath&gt;, this must
+be a full path. </p>
+  <p><b>-n &lt;filename&gt;</b> <br>
+forces this &lt;filename&gt; as a basename for all output files
+(without path). <br>
+(option not available for the GUI) </p>
+  <p><b>-p &lt;cut-file&gt;</b> <br>
+the given &lt;cut-file&gt; has to be provided with the full path and.
+it contains the cut-points (text, lineoriented). <br>
+parsing is done based on the current cut-mode -&gt;
+ini-file,
+std = bytepos. cut </p>
+  <p><b>-i &lt;token1,token2,..&gt;</b> <br>
+provides (P)IDs for selected editing,
+several separated by comma. These are then used exclusively. </p>
+  <p><b>-l</b> <br>
+creates a standard logfile </p>
+  <p><b>-g</b> <br>
+starts the GUI with all given parameters instead of starting the job at
+the command line. <br>
+changes in the GUI settings and are not written to the ini-file. </p>
+  <p><b>&lt;sourcefile 1..x&gt;</b> <br>
+the sourcefiles inlcuding the full path for this job must be provided
+at the end of the command line in the correct order. <br>
+&nbsp; </p>
+  <p>To create a special ini-file, run the GUI, set all options
+accordingly, exit the GUI and save the ini-file under a different name.
+  </p>
+  <center><a href="index.html"><img alt="" src="images/up.gif"
+ style="border: 0px solid ; width: 16px; height: 16px;"></a>&nbsp;&nbsp;<a
+ href="faq.html"><img alt="" src="images/right.gif"
+ style="border: 0px solid ; width: 16px; height: 16px;"></a></center>
+</blockquote>
+</body>
+</html>
