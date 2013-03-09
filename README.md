@@ -1,9 +1,9 @@
 
-
  ProjectX - a free Java based demux utility
 ==============================================================================
 
 Copyright (C) 2001-2011 dvb.matt, All Rights Reserved
+
 Copyright (C) 2013 esur.harun All Rights Reserved
 
  For a compilation, you need a Java SDK, which is available for various platforms.
